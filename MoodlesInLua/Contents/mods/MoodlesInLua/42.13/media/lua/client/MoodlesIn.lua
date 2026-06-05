@@ -108,7 +108,7 @@ if not UIList then return end
         local ui = UIList:get(i)
 
         if ui and not hidden[ui] then
-            if tostring(ui):find("MoodlesUI") then
+            if instanceof(ui, "MoodlesUI") then
                 if ui.setX and ui.setY then
                     ui:setX(-4096)
                     ui:setY(-4096)
